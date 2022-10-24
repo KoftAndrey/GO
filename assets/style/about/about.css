@@ -1,0 +1,43 @@
+/*Стили about*/
+.about {
+  line-height: 0;
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.about__title {
+  margin: 0 0 50px 0;
+}
+
+.about__collage {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 600px;
+  margin: 0 80px 0 0;
+}
+
+.about__info {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 500px;
+}
+
+.about__info-block {
+  margin: 0 0 50px 0;
+}
+
+.about__text {
+  margin: 0 0 28px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about__text:last-child, .about__text:last-of-type{
+  margin: 0;
+}
+
+.about__quote {
+  padding: 50px 0 0 0;
+  margin: 0;
+}

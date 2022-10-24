@@ -1,0 +1,53 @@
+.quote {
+  display: flow-root;
+  padding: 0 0 0 30px;
+  position: relative;
+}
+
+.quote__text {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.quote__text:last-of-type {
+  margin: 0 0 50px 0;
+}
+
+.quote__text:first-child:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '“';
+  font-weight: 900;
+  color: #6C0287;
+}
+
+.quote__hooks {
+  font-weight: 900;
+  color: #6C0287; 
+}
+
+.quote__author {
+  float: right;
+  max-width: 380px;
+}
+
+.quote__photo {
+  float: left;
+  margin: 0 30px 0 0;
+  width: 80px;
+  height: 80px;
+}
+
+.quote__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.quote__description_transform_uppercase {
+  text-transform: uppercase;
+}
