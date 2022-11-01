@@ -88,7 +88,7 @@
           <p class="cover__info-text">Тематических зала</p>
         </div>
 
-        <div class="cover__info-item cover__info-item_padding_top">
+        <div class="cover__info-item">
           <p class="cover__info-text cover__info-text_color_purple">new</p>
           <p class="cover__info-text">Новейшая аппаратура</p>
         </div>
@@ -97,9 +97,11 @@
 
       <a class="cover__button" href="#book">Забронировать</a>
 
+      <a class="cover__scroll" href="#relax"></a>
+
     </section>
 
-    <section class="relax">
+    <section class="relax" id="relax">
 
       <h2 class="relax__title section-title">У нас есть все для классного отдыха с друзьями!</h2>
 
@@ -259,26 +261,12 @@
 
             <div class="book__column book__column_content_date">
 
-              <select class="book__input-date" id="date" name="date" required>
-                <option value="">Дата</option>
-                <option value="05.11">05.11</option>
-                <option value="06.11">06.11</option>
-                <option value="07.11">07.11</option>
-              </select>
+              <input class="book__input-date" type="date" name="date" required>
 
-              <select class="book__input-date" list="time" name="time" required>
-                <option value="">Время</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-              </select>
+              <input class="book__input-date" type="time" name="time" min="10:00" max="22:00" required>
 
-              <select class="book__input-counter" list="guests" name="guests" required>
-                <option value="">Сколько человек</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+              <input class="book__input-counter" type="number" id="guests" name="guests" placeholder="Сколько человек" required>
+
             </div>
 
             <div class="book__column book__column_content_date book__column_short">

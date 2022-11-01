@@ -26,6 +26,7 @@
 .book__fieldset_content_entertainment-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin: 0;
 }
 
@@ -234,6 +235,10 @@
 
 .book__input-date:focus-visible, .book__input-counter:focus-visible {
   outline: none
+}
+
+.book__input-counter::placeholder {
+  color: #211e1e;
 }
 
 .book__input-text {

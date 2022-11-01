@@ -15,18 +15,6 @@
   background: url('img/cover.png') center / cover no-repeat;
 }
 
-.cover::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 90px;
-  transform: translate(-50%, 0px);
-  z-index: 3;
-  width: 97px;
-  height: 97px;
-  background: url('img/down.svg') center / cover no-repeat;
-}
-
 .cover__title {
   margin: 0;
   font-weight: 900;
@@ -45,14 +33,11 @@
 
 .cover__info {
   display: flex;
+  align-items: flex-end;
   gap: 40px;
   margin: 0 0 150px 0;
   max-width: 400px;
   text-align: center;
-}
-
-.cover__info-item_padding_top {
-  padding: 35px 0 0 0;
 }
 
 .cover__info-text {
@@ -65,6 +50,7 @@
   font-size: 75px;
   line-height: 106px;
   color: #cd06ff;
+  font-variant: small-caps;
 }
 
 .cover__info-text_size_big {
@@ -102,4 +88,20 @@
 
 .cover__button:hover::after {
   background: #7a0498;
+}
+
+.cover__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translate(-50%, 0px);
+  z-index: 3;
+  width: 97px;
+  height: 97px;
+  background: url('img/down.svg') center / cover no-repeat;
+  transition: all 0.2s;
+}
+
+.cover__scroll:hover {
+  bottom: 83px;
 }
