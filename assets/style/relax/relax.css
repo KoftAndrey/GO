@@ -1,0 +1,48 @@
+.relax {
+  padding: 50px 0;
+}
+
+.relax__title {
+  margin: 0 0 40px 0;
+  padding: 0 230px;
+  text-align: center;
+}
+
+.relax__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.relax__item {
+  flex: 1 0 calc((100% - 40px) / 3);
+  min-height: 228px;
+  padding: 166px 40px 0 40px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.relax__item_type_vr {
+ background: url('img/01.jpg') center / cover no-repeat;
+}
+
+.relax__item_type_audio {
+  background: url('img/02.jpg') center / cover no-repeat;
+}
+
+.relax__item_type_karaoke {
+  background: url('img/03.jpg') center / cover no-repeat;
+}
+
+.relax__item_type_tabletop {
+  background: url('img/04.jpg') center / cover no-repeat;
+}
+
+.relax__item_type_cinema {
+  background: url('img/05.jpg') center / cover no-repeat;
+}
+
+.relax__item_type_play-station {
+  background: url('img/06.jpg') center / cover no-repeat;
+}

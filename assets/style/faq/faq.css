@@ -1,4 +1,7 @@
-/*Стили faq*/
+.faq {
+  padding: 50px 0 45px 0;
+}
+
 .faq__title {
   margin: 0 0 50px 0;
 }

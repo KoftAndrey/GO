@@ -2,7 +2,11 @@
 
 @import url("global/global.css");
 
+@import url("header/header.css");
+
 @import url("cover/cover.css");
+
+@import url("relax/relax.css");
 
 @import url("halls/halls.css");
 
@@ -17,5 +21,3 @@
 @import url("faq/faq.css");
 
 @import url("contacts/contacts.css");
-
-@import url("address/address.css");

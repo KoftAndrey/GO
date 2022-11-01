@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__item {
+
+}
+
+.header__link {
+  font-size: 22px;
+  line-height: 50px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  border-bottom: 2px solid #cd06ff;
+}
+
+.header__button {
+  padding: 9px 29px 10px 29px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: inherit;
+  text-transform: uppercase;
+  background: transparent;
+  border: 3px solid #cd06ff;
+  border-radius: 10px;
+}
+
+.header__button:hover {
+  color: #cd06ff;
+}
