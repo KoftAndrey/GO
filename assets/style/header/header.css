@@ -39,6 +39,11 @@
   border-radius: 10px;
 }
 
-.header__button:hover {
-  color: #cd06ff;
+.header__button:hover,.header__button:focus {
+  color: #6c0287;
+  outline: none;
+}
+
+.header__button:active {
+  color: #640AA3;
 }

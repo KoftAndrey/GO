@@ -45,7 +45,7 @@
   line-height: 34px;
 }
 
-.cover__info-text_color_purple {
+.cover__text-purple {
   font-weight: 900;
   font-size: 75px;
   line-height: 106px;
@@ -53,9 +53,17 @@
   font-variant: small-caps;
 }
 
-.cover__info-text_size_big {
+.cover__text-purple_size_big {
   font-size: 100px;
   line-height: 141px;
+}
+
+.cover__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 636px;
+  min-height: 144px;
 }
 
 .cover__button {
@@ -64,7 +72,7 @@
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  background: #6C0287;
+  background: #6c0287;
   border-radius: 10px;
   position: relative;
 }
@@ -76,32 +84,51 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #6C0287;
+  background: #6c0287;
   border-radius: 10px;
   filter: blur(10px);
   z-index: -1;
 }
 
-.cover__button:hover {
-  background: #62057a;
+.cover__button:hover, .cover__button:focus {
+  background: #840aa3;
+  outline: none;
 }
 
-.cover__button:hover::after {
-  background: #7a0498;
+.cover__button:active {
+  background-color: #640aa3;
 }
 
 .cover__scroll {
-  position: absolute;
-  left: 50%;
-  bottom: 90px;
-  transform: translate(-50%, 0px);
-  z-index: 3;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 97px;
   height: 97px;
-  background: url('img/down.svg') center / cover no-repeat;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  outline: 1px solid transparent;
   transition: all 0.2s;
+  position: relative;
+  z-index: 5;
+}
+
+.cover__arrow {
+  margin-top: -6px;
 }
 
 .cover__scroll:hover {
-  bottom: 83px;
+  background-color: #fff;
+  color: #6c0287;
+}
+
+.cover__scroll:focus {
+  outline-color: #cd06ff;
+}
+
+.cover__scroll:active {
+  background-color: #cd06ff;
+  color: #fff;
+  border: 1px solid #cd06ff;
 }

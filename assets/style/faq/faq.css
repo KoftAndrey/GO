@@ -25,22 +25,87 @@
   margin: 0 0 20px 0;
 }
 
-.faq__item:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 70px;
-  width: 46px;
-  height: 46px;
-  transform: translate(0px, -50%);
-  background-image: url("img/open-purple.svg");
-}
-
 .faq__item:nth-child(2n) {
   background-color: #440F51;
   color: #FFF;
 }
 
-.faq__item:nth-child(2n):after{
-  background-image: url("img/open.svg");
+.faq__circle {
+  float: right;
+  margin-top: -37px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.faq__circle_color_purple {
+  border: 1px solid #6c0287;
+}
+
+.faq__item:hover .faq__circle_color_purple {
+  background-color: #6c0287;
+}
+
+.faq__item:hover .faq__circle_color_purple .faq__plus_color_purple {
+  background-color: #fff;
+}
+
+.faq__item:active .faq__circle_color_purple {
+  background-color: transparent;
+}
+
+.faq__item:active .faq__circle_color_purple .faq__plus_color_purple {
+  background-color: #6c0287;
+}
+
+.faq__item:active .faq__circle_color_purple .faq__plus:first-child {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.faq__circle_color_white {
+  border: 2px solid #fff;
+}
+
+.faq__item:hover .faq__circle_color_white {
+  background-color: #fff;
+}
+
+.faq__item:hover .faq__circle_color_white .faq__plus_color_white {
+  background-color: #6c0287;
+}
+
+.faq__item:active .faq__circle_color_white {
+  background-color: transparent;
+}
+
+.faq__item:active .faq__circle_color_white .faq__plus_color_white {
+  background-color: #fff;
+}
+
+.faq__item:active .faq__circle_color_white .faq__plus:first-child {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.faq__plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 1px;
+  transition: all 0.2s;
+}
+
+.faq__plus:first-child {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.faq__plus_color_white {
+  background-color: #fff;
+}
+
+.faq__plus_color_purple {
+  background-color: #6c0287;
 }
