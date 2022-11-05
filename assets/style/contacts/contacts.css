@@ -45,6 +45,14 @@
   color: #FFFFFF;
 }
 
+.contacts__address-link {
+  transition: text-decoration 1.2s ease;
+}
+
+.contacts__address-link:hover {
+  text-decoration: underline;
+}
+
 .contacts__socials {
   padding: 35px 0 0 0;
 }
@@ -73,11 +81,16 @@
 }
 
 .contacts__link:hover {
-  color: #cd06ff;
+  color: #eadeed;
+}
+
+.contacts__link:focus{
+  color: #eadeed;
+  outline-color: #cd06ff;
 }
 
 .contacts__link:active {
-  color: #840aa3;
+  color: #cd06ff;
 }
 
 .contacts__footer {

@@ -84,20 +84,29 @@
       <div class="cover__info">
 
         <div class="cover__info-item">
-          <p class="cover__info-text cover__info-text_color_purple cover__info-text_size_big">4</p>
+          <p class="cover__text-purple cover__text-purple_size_big">4</p>
           <p class="cover__info-text">Тематических зала</p>
         </div>
 
         <div class="cover__info-item">
-          <p class="cover__info-text cover__info-text_color_purple">new</p>
+          <p class="cover__text-purple">new</p>
           <p class="cover__info-text">Новейшая аппаратура</p>
         </div>
 
       </div>
 
-      <a class="cover__button" href="#book">Забронировать</a>
+      <div class="cover__actions">
 
-      <a class="cover__scroll" href="#relax"></a>
+        <a class="cover__button" href="#book">Забронировать</a>
+
+        <a class="cover__scroll" href="#relax">
+          <svg class="cover__arrow" width="29" height="30" viewBox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.425537" y="14.9161" width="1.82001" height="20.0201" transform="rotate(-44.9975 0.425537 14.9161)"/>
+            <rect x="14.5807" y="29.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 14.5807 29.0737)"/>
+            </svg>
+        </a>
+
+      </div>
 
     </section>
 
@@ -181,13 +190,13 @@
 
           <div class="book__row">
 
-            <label class="book__label-halls"><input class="book__radiobutton-halls" type="radio" name="hall" value="80's vibes">80's vibes</label>
+            <label class="book__label-halls"><input class="book__radiobutton-halls book__radiobutton-halls_type_vibes" type="radio" name="hall" value="80's vibes">80's vibes</label>
 
-            <label class="book__label-halls"><input class="book__radiobutton-halls" type="radio" name="hall" value="Star wars">Star wars</label>
+            <label class="book__label-halls"><input class="book__radiobutton-halls book__radiobutton-halls_type_star-wars" type="radio" name="hall" value="Star wars">Star wars</label>
 
-            <label class="book__label-halls"><input class="book__radiobutton-halls" type="radio" name="hall" value="Wild west">Wild west</label>
+            <label class="book__label-halls"><input class="book__radiobutton-halls book__radiobutton-halls_type_wild-west" type="radio" name="hall" value="Wild west">Wild west</label>
 
-            <label class="book__label-halls"><input class="book__radiobutton-halls" type="radio" name="hall" value="Neon style">Neon style</label>
+            <label class="book__label-halls"><input class="book__radiobutton-halls book__radiobutton-halls_type_neon-style" type="radio" name="hall" value="Neon style">Neon style</label>
 
           </div>
 
@@ -373,38 +382,73 @@
 
       <ul class="faq__list">
         <li class="faq__item">
+          
           <details>
             <summary>Можно ли забронировать комнату онлайн?</summary>
             <p></p>
           </details>
+
+          <div class="faq__circle faq__circle_color_purple">
+            <span class="faq__plus faq__plus_color_purple"></span>
+            <span class="faq__plus faq__plus_color_purple"></span>
+          </div>
+
         </li>
 
         <li class="faq__item">
+          
           <details>
             <summary>Могут ли мне вернуть деньги за бронь?</summary>
             <p></p>
           </details>
+
+          <div class="faq__circle faq__circle_color_white">
+            <span class="faq__plus faq__plus_color_white"></span>
+            <span class="faq__plus faq__plus_color_white"></span>
+          </div>
+
         </li>
 
         <li class="faq__item">
+          
           <details>
             <summary>Какая комната самая популярная?</summary>
             <p></p>
           </details>
+
+          <div class="faq__circle faq__circle_color_purple">
+            <span class="faq__plus faq__plus_color_purple"></span>
+            <span class="faq__plus faq__plus_color_purple"></span>
+          </div>
+
         </li>
 
         <li class="faq__item">
+          
           <details>
             <summary>Как получить VIP карту?</summary>
             <p></p>
           </details>
+
+          <div class="faq__circle faq__circle_color_white">
+            <span class="faq__plus faq__plus_color_white"></span>
+            <span class="faq__plus faq__plus_color_white"></span>
+          </div>
+
         </li>
 
         <li class="faq__item">
+          
           <details>
             <summary>Какая комната самая популярная?</summary>
             <p></p>
           </details>
+
+          <div class="faq__circle faq__circle_color_purple">
+            <span class="faq__plus faq__plus_color_purple"></span>
+            <span class="faq__plus faq__plus_color_purple"></span>
+          </div>
+
         </li>
       </ul>
 
@@ -436,14 +480,14 @@
               <path d="M29.1357 14.6654H32.0493C32.0493 7.82541 26.4071 2.66675 18.9236 2.66675V5.33341C24.8411 5.33341 29.1357 9.25741 29.1357 14.6654Z" fill="#CD06FF"/>
               <path d="M18.9382 10.6667C22.0018 10.6667 23.3086 11.8627 23.3086 14.6667H26.2221C26.2221 10.3667 23.6363 7.99999 18.9382 7.99999V10.6667ZM23.9233 17.924C23.6434 17.6911 23.2756 17.5669 22.8975 17.5776C22.5194 17.5883 22.1606 17.7331 21.8969 17.9813L18.4108 21.2627C17.5717 21.116 15.8848 20.6347 14.1483 19.0493C12.4118 17.4587 11.8859 15.9107 11.73 15.148L15.3122 11.956C15.5838 11.7148 15.7422 11.3864 15.7539 11.0403C15.7656 10.6941 15.6296 10.3574 15.3749 10.1013L9.99204 4.68399C9.73716 4.42714 9.38292 4.27133 9.00456 4.24967C8.62619 4.22801 8.2535 4.3422 7.96564 4.56799L4.80441 7.04933C4.55254 7.28068 4.40222 7.58859 4.38194 7.91466C4.36009 8.24799 3.94344 16.144 10.633 22.2693C16.4689 27.6093 23.7791 28 25.7924 28C26.0867 28 26.2673 27.992 26.3154 27.9893C26.6716 27.9711 27.0078 27.8329 27.2594 27.6013L29.969 24.7067C30.2159 24.4434 30.3409 24.1024 30.3175 23.7561C30.2941 23.4098 30.1241 23.0855 29.8437 22.852L23.9233 17.924V17.924Z" fill="#CD06FF"/>
             </svg>          
-            <a class= "contacts__address-text" href="tel:89509302893">8(950)930-28-93</a>
+            <a class= "contacts__address-text contacts__address-link" href="tel:89509302893">8(950)930-28-93</a>
           </div>
           <div class="contacts__address-item">
             <svg class="contacts__address-icon" width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.729905 1.94725C5.52843 5.66669 13.9484 12.2103 16.4231 14.2506C16.7553 14.526 17.1116 14.666 17.4815 14.666C17.8507 14.666 18.2064 14.5273 18.5379 14.2533C21.0147 12.2109 29.4346 5.66669 34.2332 1.94725C34.532 1.71612 34.5775 1.30987 34.3357 1.02731C33.7765 0.374375 32.9429 0 32.0494 0H2.91366C2.02026 0 1.18654 0.374375 0.627475 1.02738C0.385602 1.30988 0.431149 1.71612 0.729905 1.94725Z" fill="#CD06FF"/>
               <path d="M34.5405 3.96279C34.2823 3.85279 33.9785 3.89116 33.7637 4.05916C28.4422 8.18804 21.6505 13.4804 19.5137 15.2427C18.3144 16.2336 16.6499 16.2336 15.4478 15.2414C13.1701 13.3632 5.54327 7.42891 1.19926 4.0591C0.982992 3.8911 0.678568 3.85404 0.422492 3.96273C0.16505 4.07216 0 4.30785 0 4.5676V21.3332C0 22.804 1.30667 23.9999 2.9136 23.9999H32.0494C33.6563 23.9999 34.963 22.804 34.963 21.3332V4.5676C34.963 4.30785 34.7979 4.07154 34.5405 3.96279Z" fill="#CD06FF"/>
             </svg>
-            <a class="contacts__address-text" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+            <a class="contacts__address-text contacts__address-link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
           </div>
         </address>
         <nav class="contacts__socials">
