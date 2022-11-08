@@ -46,11 +46,11 @@
 }
 
 .contacts__address-link {
-  transition: text-decoration 1.2s ease;
+  transition: color 0.2s ease;
 }
 
 .contacts__address-link:hover {
-  text-decoration: underline;
+  color: #cd06ff;
 }
 
 .contacts__socials {
@@ -78,6 +78,7 @@
   border-radius: 50%;
   outline: 1px solid transparent;
   outline-offset: 3px;
+  transition: color 0.2s ease;
 }
 
 .contacts__link:hover {
@@ -104,6 +105,10 @@
   margin: 0 0 6px 0;
 }
 
+.contacts__designer-email {
+  transition: color 0.2s ease;
+}
+
 .contacts__designer-email:hover {
-  text-decoration: underline;
+  color: #cd06ff;
 }

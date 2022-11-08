@@ -75,6 +75,7 @@
   background: #6c0287;
   border-radius: 10px;
   position: relative;
+  transition: background 0.2s ease;
 }
 
 .cover__button::after {
@@ -96,7 +97,7 @@
 }
 
 .cover__button:active {
-  background-color: #640aa3;
+  background: #640aa3;
 }
 
 .cover__scroll {
