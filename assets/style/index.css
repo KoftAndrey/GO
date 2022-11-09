@@ -1,5 +1,7 @@
 @import url("normalize/normalize.css");
 
+@import url("vars/vars.css");
+
 @import url("global/global.css");
 
 @import url("header/header.css");

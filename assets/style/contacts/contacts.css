@@ -42,7 +42,7 @@
   line-height: 28px;
   font-style: normal;
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--text-color, #ffffff);
 }
 
 .contacts__address-link {
@@ -50,7 +50,7 @@
 }
 
 .contacts__address-link:hover {
-  color: #cd06ff;
+  color: var(--highlight-purple, #cd06ff);
 }
 
 .contacts__socials {
@@ -73,7 +73,7 @@
   display: inline-block;
   height: 50px;
   width: 50px;
-  color: #fff;
+  color: var(--text-color, #ffffff);
   text-decoration: none;
   border-radius: 50%;
   outline: 1px solid transparent;
@@ -87,11 +87,11 @@
 
 .contacts__link:focus{
   color: #eadeed;
-  outline-color: #cd06ff;
+  outline-color: var(--highlight-purple, #cd06ff);
 }
 
 .contacts__link:active {
-  color: #cd06ff;
+  color: var(--highlight-purple, #cd06ff);
 }
 
 .contacts__footer {
@@ -110,5 +110,5 @@
 }
 
 .contacts__designer-email:hover {
-  color: #cd06ff;
+  color: var(--highlight-purple, #cd06ff);
 }

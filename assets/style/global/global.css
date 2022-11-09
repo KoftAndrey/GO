@@ -17,8 +17,8 @@ body {
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 28px;
-  color: #fff;
-  background-color: #1b1a1b;
+  color: var(--text-color, #ffffff);
+  background-color: var(--background-dark, #1b1a1b);
 }
 
 img, svg {

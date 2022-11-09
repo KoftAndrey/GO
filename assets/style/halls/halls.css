@@ -30,7 +30,7 @@
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
-  color: #fff;
+  color: var(--text-color, #ffffff);
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;

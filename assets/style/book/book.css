@@ -1,6 +1,6 @@
 .book {
   padding: 80px 0;
-  background-color: #440f51;
+  background-color: var(--background-purple, #440f51);
 }
 
 .book__title {
@@ -144,7 +144,7 @@
 
 .book__radiobutton-halls:active::after, .book__radiobutton-halls:checked::after {
   color: #fff;
-  background-color: #6c0287;
+  background-color: var(--dark-purple, #6c0287);
   border: 3px solid #fff;
 }
 
@@ -202,7 +202,7 @@
   display: block;
   width: 27px;
   height: 27px;
-  background-color: #cd06ff;
+  background-color: var(--highlight-purple, #cd06ff);
   border-radius: 50%;
   border: 7px solid #fff;
   opacity: 0;
@@ -217,7 +217,7 @@
 }
 
 .book__radiobutton:focus::before {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--highlight-purple, #cd06ff);
 }
 
 .book__checkbox {
@@ -248,7 +248,7 @@
   left: 3px;
   width: 20px;
   height: 10px;
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--highlight-purple, #cd06ff);
   border-top: none;
   border-right: none;
   opacity: 0;
@@ -264,7 +264,7 @@
 }
 
 .book__checkbox:focus::before {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--highlight-purple, #cd06ff);
 }
 
 .book__input-date {
@@ -296,7 +296,7 @@
 .book__input-date:focus, .book__input-counter:focus {
   font-size: 18px;
   line-height: 28px;
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--highlight-purple, #cd06ff);
 }
 
 .book__input-counter::placeholder {
@@ -322,7 +322,7 @@
 }
 
 .book__input-text:focus {
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--highlight-purple, #cd06ff);
 }
 
 .book__button {
@@ -334,7 +334,7 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--dark-purple);
   background-color: #fff;
   border: 3px solid transparent;
   border-radius: 10px;
@@ -343,11 +343,11 @@
 
 .book__button:hover {
   background-color: #eadeed;
-  border: 3px solid #6c0287;
+  border: 3px solid var(--dark-purple, #6c0287);
 }
 
 .book__button:focus {
-  border: 3px solid #6c0287;
+  border: 3px solid var(--dark-purple, #6c0287);
 }
 
 .book__button:active {

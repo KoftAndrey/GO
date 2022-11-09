@@ -26,7 +26,7 @@
 }
 
 .faq__item:nth-child(2n) {
-  background-color: #440F51;
+  background-color: var(--background-purple, #440f51);
   color: #FFF;
 }
 
@@ -41,11 +41,11 @@
 }
 
 .faq__circle_color_purple {
-  border: 1px solid #6c0287;
+  border: 1px solid var(--dark-purple, #6c0287);
 }
 
 .faq__item:hover .faq__circle_color_purple {
-  background-color: #6c0287;
+  background-color: var(--dark-purple, #6c0287);
 }
 
 .faq__item:hover .faq__circle_color_purple .faq__plus_color_purple {
@@ -57,7 +57,7 @@
 }
 
 .faq__item:active .faq__circle_color_purple .faq__plus_color_purple {
-  background-color: #6c0287;
+  background-color: var(--dark-purple, #6c0287);
 }
 
 .faq__item:active .faq__circle_color_purple .faq__plus:first-child {
@@ -73,7 +73,7 @@
 }
 
 .faq__item:hover .faq__circle_color_white .faq__plus_color_white {
-  background-color: #6c0287;
+  background-color: var(--dark-purple, #6c0287);
 }
 
 .faq__item:active .faq__circle_color_white {
@@ -107,5 +107,5 @@
 }
 
 .faq__plus_color_purple {
-  background-color: #6c0287;
+  background-color: var(--dark-purple, #6c0287);
 }

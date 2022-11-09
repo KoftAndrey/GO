@@ -21,12 +21,12 @@
   left: 0;
   content: '“';
   font-weight: 900;
-  color: #6C0287;
+  color: var(--dark-purple, #6c0287);
 }
 
 .quote__hooks {
   font-weight: 900;
-  color: #6C0287; 
+  color: var(--dark-purple, #6c0287); 
 }
 
 .quote__author {

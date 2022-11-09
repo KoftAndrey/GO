@@ -11,17 +11,25 @@
 .relax__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 40px 20px;
+  padding: 0 0 69px 0;
+  font-size: 0;
+  line-height: 0;
 }
 
 .relax__item {
-  flex: 1 0 calc((100% - 40px) / 3);
+  flex: 0 0 calc((100% - 40px) / 3);
   min-height: 228px;
   padding: 166px 40px 0 40px;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   transition: transform 0.2s ease;
+}
+
+.relax__item:nth-child(3n+2) {
+  margin: 0 0 -138px 0;
 }
 
 .relax__item:hover {
